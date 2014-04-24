@@ -1,20 +1,15 @@
 import java.util.Scanner;
 
+
 public class Faktorial {
     public static void main (String [] args) {
         System.out.println("Masukkan angka: "+"!");
         Scanner a = new Scanner (System.in);
-        int b = a.nextInt();
+         int b = a.nextInt();
+        for(int i=1;i<=b;i++)
+        {
+            System.out.print(i+"!");
+        }
   
-        int result;
-        result = fact(b);
-        System.out.println(result);
     }
-    public static int fact(int x) {
-        if (x > 1)
-            return x * fact(x-1);
-        else
-            return 1;
-    }
-
 }
