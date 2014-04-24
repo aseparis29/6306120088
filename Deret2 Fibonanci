@@ -11,19 +11,22 @@ public class Fibonanci {
       {
           if(i==1)
           {
-              System.out.print(1+" ");
+              awal=1;
           }
           else if(i>0 && i<3)
           {
-              System.out.print(1+" ");
+              awal=1;
           }
           else
           {
               awal = hasil;
               hasil=hasil+n;
               n=awal;
-              System.out.print(hasil+" ");
+             
           }
+         
       }
+       System.out.print("");
+       System.out.print(awal+hasil+n);
     }   
 }
